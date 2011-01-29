@@ -1,0 +1,145 @@
+The Zen of Python, by Tim Peters
+
+- Beautiful is better than ugly.
+  - programs should be written for human readers
+  - simple expressions for common operations (math, lists and
+    dictionary indexing)
+  - inline literal unicode strings
+  - show very simple versions of function and class
+
+- Explicit is better than implicit.
+  - use of self inside methods
+  - no hidden loop variables, a la perl
+  - show a for loop with a range()
+
+- Simple is better than complex.
+  - use of interactive interpreter for experimentation
+  - print 'string'
+  - print integer value
+  - print complex data structures like lists and dictionaries
+
+- Complex is better than complicated.
+  - decimal and complex number types are supported through modules
+  - NumPy/SciPy support common scientific and advanced mathematics
+
+- Flat is better than nested.
+  - standard library namespace is flat, no
+    'com.company.java.long.path.goes.here'
+  - packages can have nested namespaces, but tend to be fairly
+    shallow
+  - lots of modules in the stdlib for all sorts of purposes
+    - web
+    - networking
+    - system info like users and passwords
+    - GUI
+    - threads & multiprocessing
+
+- Sparse is better than dense.
+  - although the standard library has a lot of modules, new ones
+    are not added arbitrarily
+  - pypi provides access to other modules and applications
+    - list popular ones
+      - Django
+      - Twisted
+      - Zope
+      - SQLAlchemy
+      - Sphinx
+    - separating these modules from the stdlib means they can be
+      developed on a different schedule
+  - pip installs them, more or less automatically handling the
+    dependencies
+
+- Readability counts.
+  - whitespace is used for all block structure
+  - no extra punctuation, begin/end, etc.
+  - built-in documentation capabilities with docstrings
+  - documentation for the language and all of the standard
+    library modules is online in several formats (HTML, PDF, text)
+
+- Special cases aren't special enough to break the rules.
+  - everything is an object
+    - numbers
+    - strings
+    - functions
+    - classes
+    - types
+  - methods are just functions defined inside a class scope
+  - most features are actually brought in by importing modules,
+    including regular expression support
+  - dynamic typing and runtime attribute lookup
+
+- Although practicality beats purity.
+  - strings do have methods for basic parsing and manipulation
+  - multiple programming modes
+    - procedural
+    - OOP
+    - functional
+      - list comprehensions
+      - generator expressions
+
+- Errors should never pass silently.
+  - picture: ships passing in the night, or fog and lighthouse
+  - error handling in python is based on exceptions and the
+    default is to dump the entire traceback to the screen
+
+- Unless explicitly silenced.
+  - picture: stealth
+  - exceptions can be 'caught' and processed (or ignored)
+
+- In the face of ambiguity, refuse the temptation to guess.
+  - no type coersion, so you cannot add strings and numbers (a la php)
+  - you can, however, *multiply* them
+
+- There should be one-- and preferably only one --obvious way to do it.
+  - list indexing vs. dictionary indexing
+  - class attribute access on an instance
+  - for loops over range of numbers and contents of list
+  - use of standards and PEPs to codify APIs such as for
+    accessing a database and WSGI for talking to a web server
+
+- Although that way may not be obvious at first unless you're Dutch.
+  - application areas include
+    - command line
+    - GUI
+      - GTK
+      - KDE
+      - Cocoa
+      - Windows
+      - Tk
+      - wxPython
+    - web
+      - Django
+      - AppEngine
+      - Pyramid
+      - Flask
+      - TurboGears
+      - Pecan
+
+- Now is better than never.
+  - discuss Python 2 vs. Python 3
+  - don't necessarily need to switch at all, since there are
+    multiple implementations it may be possible to mix Python
+    with your existing app
+    - Jython
+    - IronPython
+    - PyPy
+    - ctypes for gluing together C/C++ libraries
+
+- Although never is often better than *right* now.
+  - although the python developers adapt ideas from other
+    languages (decorators, meta classes, list comprehensions,
+    generators) they don't take everything -- language moratorium
+  - some things stay on the outside
+    - NumPy / SciPy
+    - most of the GUI toolkits
+
+- If the implementation is hard to explain, it's a bad idea.
+  - PEP process and community review
+
+- If the implementation is easy to explain, it may be a good idea.
+  - show the logos of big companies using Python
+
+- Namespaces are one honking great idea -- let's do more of those!
+  - demonstrate use of closures
+  - closures are implemented by defining a named function, rather
+    than unnamed blocks as in ruby (everything is an object, again)
