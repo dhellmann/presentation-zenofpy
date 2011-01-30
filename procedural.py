@@ -3,4 +3,8 @@ def my_function(arg1, arg2):
     """
     return arg1 * arg2
 
-print my_function(1, 2)
+results = []
+for i in range(5):
+    results.append(my_function(i, i))
+
+print results
